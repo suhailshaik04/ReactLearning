@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 
 const fetchPosts = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-    const data = await response.json();
-    return data;
+    return await response.json();
 };
 
 const heavyComputation = (item) => {
