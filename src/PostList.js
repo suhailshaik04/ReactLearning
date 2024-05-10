@@ -8,7 +8,6 @@ const fetchPosts = async () => {
 
 const heavyComputation = (item) => {
     const start = performance.now();
-    // Simulate heavy computation by processing data
     const computedValue = `Processed ${item.title}`;
     const end = performance.now();
     console.log(`Computation time: ${end - start} ms`);
